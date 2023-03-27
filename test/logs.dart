@@ -1,4 +1,4 @@
-import 'package:dart_logger/dart_logger.dart';
+import 'package:light_logger/light_logger.dart';
 
 void main() {
   Logger.printDefault('Default message');

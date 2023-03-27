@@ -1,3 +1,3 @@
-library dart_logger;
+library light_logger;
 
 export './src/logger.dart';
