@@ -1,6 +1,6 @@
 name: light_logger
-description: A easy and light logger for Dart & Flutter
-version: 0.0.1
+description: A easy and light logger for Flutter
+version: 0.0.2
 homepage: https://teta.so
 repository: https://github.com/teta-so/dart_logger
 
@@ -8,7 +8,11 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
+  flutter:
+    sdk: flutter
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
   flutter_lints: ^2.0.1
 
