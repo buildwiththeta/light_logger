@@ -1,30 +1,40 @@
-import 'package:flutter/rendering.dart';
+import 'package:flutter/foundation.dart';
 
 ///very usefull tool for debugging with prints
 class Logger {
   ///print a text in white color
   static void printDefault(final String text) {
-    debugPrint(text);
+    if (kDebugMode) {
+      debugPrint(text);
+    }
   }
 
   ///print a text in green color
   static void printSuccess(final String text) {
-    debugPrint('\x1b[32m [success] $text\x1B[0m');
+    if (kDebugMode) {
+      debugPrint('\x1b[32m [success] $text\x1B[0m');
+    }
   }
 
   ///print a text in orange color
   static void printWarning(final String text) {
-    debugPrint('\x1B[33m [warning] $text\x1B[0m');
+    if (kDebugMode) {
+      debugPrint('\x1B[33m [warning] $text\x1B[0m');
+    }
   }
 
   ///print a text in red color
   static void printError(final String text) {
-    debugPrint('\x1B[31m [error] $text\x1B[0m');
+    if (kDebugMode) {
+      debugPrint('\x1B[31m [error] $text\x1B[0m');
+    }
   }
 
   ///print a text in cyan color
   static void printMessage(final String text) {
-    debugPrint('\x1b[36m $text\x1B[0m');
+    if (kDebugMode) {
+      debugPrint('\x1b[36m $text\x1B[0m');
+    }
   }
 }
 /* REFERENCES
